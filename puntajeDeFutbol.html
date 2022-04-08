@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa para calcular los puentos de un equipo de futbol</title>
+</head>
+<body>
+    <h3>Programa para calcular los puntos de un equipo de futbol</h3>
+    <div>
+        
+        <script>
+            //Para crear un input numero se usa parseInt
+            //Para captar un texto o numero se usa prompt
+            function imprimir(frase) {
+                document.write(frase);
+            }
+
+            alert("Bienvenido al programa para calcular el puntaje obtenido en futbol")
+
+            var nombreEquipo = prompt("Por favor, ingrese el nombre del equipo de futbol");
+            var victorias = parseInt(prompt("Ingrese la cantidad de victorias de Aspirinas F.C."));
+            var empates = parseInt(prompt("Ingrese la cantidad de empates de Aspirinas F.C."));
+
+            puntosTotal = (victorias * 3) + empates;
+
+            imprimir("El total de los puntos del equipo " +nombreEquipo+ " es de: " +puntosTotal)
+
+
+            //Para este caso lo que se requiere es que el usuario pueda ingresar desde la pagina los datos
+
+        </script>
+    </div>
+    
+</body>
+</html>

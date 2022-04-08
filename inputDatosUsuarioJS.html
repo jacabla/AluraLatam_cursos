@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de IMC</title>
+</head>
+<body>
+    <h3>Programa para calcular el Indice de Masa Corporal</h3>
+    <div>
+        <script>
+            function saltaLinea () {
+                document.write("<br>");
+            }
+            function imprimir(frase) {
+                document.write(frase);
+                saltaLinea();
+            }
+
+            function calcularIMC(peso,altura) {
+
+                return(peso / (altura * altura));
+            }
+            
+            nombre = prompt("Ingrese su nombre");
+            pesoInformado = prompt("Ingrese su peso:");
+            alturaInformada = prompt("Ingrese su altura:");
+
+            imcCalculado = calcularIMC(pesoInformado,alturaInformada);
+
+
+            imprimir("Hola " +nombre+ " El IMC calculado es de: " +Math.round(imcCalculado));
+
+            if (imcCalculado < 18.5) {
+                imprimir("IMC abajo de lo recomendado")
+            }
+
+            if (imcCalculado > 30) {
+                imprimir("IMC mas alto de lo recomendado, obesidad")
+            }
+
+            if (imcCalculado <= 18.5 && imcCalculado>= 24.5) {
+                imprimir("IMC es normal a bajo")
+            }
+
+            if (imcCalculado <= 24.6 && imcCalculado>= 29.9) {
+                imprimir("IMC es normal a alto")
+            }
+
+
+            //Para este caso lo que se requiere es que el usuario pueda ingresar desde la pagina los datos
+
+        </script>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinanza de un numero</title>
+</head>
+<body>
+    <h3>Programa juego de adivinanza de un numero</h3>
+    <div>
+        <script>
+            function saltaLinea () {
+                document.write("<br>");
+            }
+            function imprimir(frase) {
+                document.write(frase);
+                saltaLinea();
+            }
+
+            var numeroCierto = 5 //Math.round(Math.random()*10);
+            var numero = parseInt(prompt("Ingrese un numero del 1 al 10"))
+
+            if (numero == 5) {
+                imprimir("Excelente, acerto o el numero")
+            }
+
+            if (numero != numeroCierto) {
+                imprimir("Lo siento, no es el mumero, siga participando")
+            }
+
+            //Para este caso lo que se requiere es que el usuario pueda ingresar desde la pagina los datos
+
+        </script>
+    </div>
+    
+</body>
+</html>
